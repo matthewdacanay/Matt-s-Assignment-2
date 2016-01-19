@@ -1,5 +1,5 @@
 public class SpaceNeedle {
-   //public static final SIZE
+   //public static final int SIZE=4
    public static void main (String[] args) {
       needle();
       top();
@@ -8,6 +8,8 @@ public class SpaceNeedle {
       neck();
       top();
    }
+   
+   //Draws the thin part of the SpaceNeedle above the top and below the bottom
    public static void needle() {
       for (int i=1; i<=4; i++) {
          for(int j=1; j<=12; j++){
@@ -16,6 +18,8 @@ public class SpaceNeedle {
          System.out.println("||");
       }
    }
+   
+   //Generates the top half of SpaceNeedle head as well as the base, Sam is awesome
    public static void top() {
       for (int i=1; i<=4; i++) {
          for (int j=1; j<=-3*i+12; j++) {
@@ -37,6 +41,8 @@ public class SpaceNeedle {
       }
       System.out.println("|");
    }
+   
+   //Draws the bottom of the head of SpaceNeedle
    public static void bottom() {
       for (int i=1; i<=4; i++) {
          for (int j=1; j<= 2*i-2; j++) {
@@ -49,6 +55,8 @@ public class SpaceNeedle {
          System.out.println("_/");
       }
    }
+   
+   //Produces the neck of SpaceNeedle
    public static void neck() {
       for (int i=1; i<=16; i++) {
          for (int j=1; j<=9; j++) {
@@ -60,6 +68,4 @@ public class SpaceNeedle {
          System.out.println();   
       }   
    }
-}
-
-            
+}          
